@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-UA-0Kb">
+                                <rect key="frame" x="20" y="95" width="380" height="86"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9J-wC-C9j">
+                                <rect key="frame" x="20" y="220" width="374" height="96"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvM-7R-b5U">
+                                <rect key="frame" x="20" y="324" width="374" height="98"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Color Me Green">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayGreenWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmB-Hc-kZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAU-fC-4Ue">
+                                <rect key="frame" x="20" y="430" width="374" height="98"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="77Z-IB-8p4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Color Me Red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayRedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVV-n8-rGK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lAU-fC-4Ue" firstAttribute="leading" secondItem="y9J-wC-C9j" secondAttribute="leading" id="1b2-hT-HGR"/>
+                            <constraint firstItem="3Ie-UA-0Kb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="5kQ-nN-6Ag"/>
+                            <constraint firstItem="hvM-7R-b5U" firstAttribute="top" secondItem="y9J-wC-C9j" secondAttribute="bottom" constant="8" id="YwB-Dt-gHH"/>
+                            <constraint firstItem="y9J-wC-C9j" firstAttribute="leading" secondItem="3Ie-UA-0Kb" secondAttribute="leading" id="cYc-pv-ffW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ie-UA-0Kb" secondAttribute="trailing" constant="14" id="izI-fj-SUW"/>
+                            <constraint firstItem="lAU-fC-4Ue" firstAttribute="leading" secondItem="hvM-7R-b5U" secondAttribute="leading" id="lKE-sP-a0j"/>
+                            <constraint firstItem="3Ie-UA-0Kb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ljA-YT-n7Z"/>
+                            <constraint firstItem="lAU-fC-4Ue" firstAttribute="top" secondItem="hvM-7R-b5U" secondAttribute="bottom" constant="8" id="pFm-wq-n4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Ie-UA-0Kb" secondAttribute="bottom" constant="681" id="tNz-cT-YpG"/>
+                            <constraint firstItem="lAU-fC-4Ue" firstAttribute="trailing" secondItem="hvM-7R-b5U" secondAttribute="trailing" id="uDD-pp-YIs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y9J-wC-C9j" secondAttribute="bottom" constant="546" id="ubf-eW-uM4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lAU-fC-4Ue" secondAttribute="bottom" constant="334" id="woZ-xe-60Z"/>
+                            <constraint firstItem="y9J-wC-C9j" firstAttribute="top" secondItem="3Ie-UA-0Kb" secondAttribute="bottom" constant="39" id="xhc-dZ-XJ1"/>
+                            <constraint firstItem="y9J-wC-C9j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xjz-Ir-vwY"/>
+                            <constraint firstItem="lAU-fC-4Ue" firstAttribute="trailing" secondItem="y9J-wC-C9j" secondAttribute="trailing" id="yjY-fN-Nqj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnGreen" destination="hvM-7R-b5U" id="aXD-d1-zRe"/>
+                        <outlet property="btnRed" destination="lAU-fC-4Ue" id="0EO-fo-h1h"/>
+                        <outlet property="lblMessage" destination="y9J-wC-C9j" id="lWo-SA-dg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
